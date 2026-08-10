@@ -21,10 +21,12 @@
       background-color: #333;
       color: #fff;
       border: 1px solid #fff;
-      padding: 10px 20px;
+      padding: 15px;
       margin: 5px;
-      font-size: 18px;
-      border-radius: 5px;
+      font-size: 22px;
+      border-radius: 8px;
+      width: 60px;
+      height: 60px;
     }
     .fila {
       display: flex;
@@ -40,15 +42,16 @@
   <!-- Botones táctiles -->
   <div class="controles">
     <div class="fila">
-      <button onclick="mover('up')">⬆️</button>
+      <button id="btnUp">⬆️</button>
     </div>
     <div class="fila">
-      <button onclick="mover('left')">⬅️</button>
-      <button onclick="mover('down')">⬇️</button>
-      <button onclick="mover('right')">➡️</button>
+      <button id="btnLeft">⬅️</button>
+      <button id="btnDown">⬇️</button>
+      <button id="btnRight">➡️</button>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
