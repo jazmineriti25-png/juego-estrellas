@@ -14,12 +14,41 @@
       border: 2px solid #fff;
       margin-top: 20px;
     }
+    .controles {
+      margin-top: 20px;
+    }
+    .controles button {
+      background-color: #333;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .fila {
+      display: flex;
+      justify-content: center;
+    }
   </style>
 </head>
 <body>
-  <h1>Juego Estrellas </h1>
-  <p>Usa las flechas para mover tu estrella y comer las demás</p>
+  <h1>Juego Estrellas</h1>
+  <p>Usa las flechas o los botones para mover tu estrella y comer las demás</p>
   <canvas id="juego" width="400" height="400"></canvas>
+
+  <!-- Botones táctiles -->
+  <div class="controles">
+    <div class="fila">
+      <button onclick="mover('up')">⬆️</button>
+    </div>
+    <div class="fila">
+      <button onclick="mover('left')">⬅️</button>
+      <button onclick="mover('down')">⬇️</button>
+      <button onclick="mover('right')">➡️</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

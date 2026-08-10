@@ -41,7 +41,7 @@ function dibujar() {
   });
 }
 
-// Detectar teclas
+// Función para mover con teclado
 document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowUp') y -= 10;
   if (e.key === 'ArrowDown') y += 10;
@@ -49,6 +49,15 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') x += 10;
   dibujar();
 });
+
+// Función para mover con botones táctiles
+function mover(direccion) {
+  if (direccion === 'up') y -= 10;
+  if (direccion === 'down') y += 10;
+  if (direccion === 'left') x -= 10;
+  if (direccion === 'right') x += 10;
+  dibujar();
+}
 
 // Dibujar la primera vez
 dibujar();
